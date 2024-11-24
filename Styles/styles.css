@@ -1,7 +1,130 @@
-h1 {color: #db0000;font-size:250%;}
-h2 {color: #db0000;font-size:175%;}
-h3{color: #db0000;font-size:175%;}
-h4{color: #db0000;font-size:175%;}
-li {color:#ffffff;font-size:150%;}
-a {color:#564d4d;}
-p {color:#ffffff;font-size:150%;}
+/* 
+#db0000 Rojo
+#000000 Negro
+#ffffff Blaco
+#564d4d Gray
+#831010 Vermilion
+*/
+
+/* Estilos básicos para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Color de fondo */
+    text-align: center;
+    color: #333; /* Color de texto principal */
+  }
+  
+  .main-title {
+    font-size: 2em;
+    color: #ffffff; /* Color de encabezado principal */
+    margin: 20px 0;
+  }
+  
+  .app-name {
+    font-size: 1.8em;
+    color: #db0000; /* Color para los títulos "Kiss T.V" */
+  }
+  
+  .description {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #ffffff; /* Color de texto para las descripciones */
+  }
+  
+  .installation-steps {
+    font-size: 1.5em;
+    color: #db0000; /* Color para los pasos de instalación */
+    margin: 20px 0;
+  }
+  
+  .steps-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .steps-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #ffffff;
+  }
+  
+  .steps-list a {
+    color: #2980b9; /* Color de los enlaces */
+    text-decoration: none;
+  }
+  
+  .steps-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    font-size: 1.5em;
+    color: #2c3e50; /* Color de los títulos de contacto */
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    width: 45px;
+    margin: 10px;
+    display: inline-block;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.7; /* Efecto de hover en los íconos sociales */
+  }
+  
+  /* Estilo para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .main-title, .installation-steps, .app-name, .contact-info {
+      font-size: 1.5em;
+    }
+  
+    .logo {
+      width: 150px;
+    }
+  
+    p {
+      font-size: 0.9em;
+    }
+  
+    .social-icons {
+      text-align: center;
+    }
+  
+    .social-icon {
+      width: 40px;
+      margin: 8px;
+    }
+  
+    .steps-list li {
+      font-size: 1.1em;
+    }
+  }
+  
+  /* Estilo para pantallas grandes */
+  @media screen and (min-width: 769px) {
+    .main-title, .installation-steps, .app-name, .contact-info {
+      font-size: 2em;
+    }
+  
+    .logo {
+      width: 200px;
+    }
+  
+    p {
+      font-size: 1.1em;
+    }
+  }
+  
