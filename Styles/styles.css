@@ -127,4 +127,65 @@ body {
       font-size: 1.1em;
     }
   }
+
+  .carousel {
+    width: 80%; /* Ajusta el tamaño según tus necesidades */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    overflow: hidden; /* Oculta el contenido desbordado */
+    position: relative; /* Necesario para posicionar los botones de control */
+  }
   
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Separa los botones a la izquierda y derecha */
+    transform: translateY(-50%); /* Centra los botones verticalmente */
+    z-index: 10; /* Asegura que los botones estén por encima de las imágenes */
+  }
+  
+  .control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%; /* Botones redondeados */
+    font-size: 18px;
+    z-index: 11; /* Asegura que los botones se vean sobre otros elementos */
+  }
+  
+  .control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Botón de pausa */
+  #pause {
+    position: absolute;
+    bottom: 10px; /* Ubica el botón de pausa en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón horizontalmente */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 11;
+  }
+  
+  #pause:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }  

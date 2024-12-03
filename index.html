@@ -28,57 +28,9 @@
         <li>6. ¡Disfruta de tus películas, series y canales favoritos!</li>
     </ul>
     <h2 class="app-name">Kiss TV</h2>    
-    
-    <style>
-    .carousel {
-        position: relative;
-        width: 80%;
-        max-width: 1500px;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-  
-      .carousel-images {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        width: 100%;
-      }
-  
-      .carousel-images img {
-        width: 100%;
-        border-radius: 10px;
-      }
-  
-      .carousel-controls {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-        z-index: 10;
-      }
-  
-      .control {
-        background-color: rgba(0, 0, 0, 0.5);
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 50%;
-        font-size: 18px;
-      }
-  
-      .control:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-    </style>
-    
-  </head>
-  <body>
+        
     <div class="carousel">
-      <div class="carousel-images" id="carousel-images">
+        <div class="carousel-images" id="carousel-images">
         <img src="Resource/Carrucel 08.jpeg" alt="Imagen 1">
         <img src="Resource/Carrucel 07.jpeg" alt="Imagen 2">
         <img src="Resource/Carrucel 06.jpeg" alt="Imagen 3">
@@ -86,49 +38,17 @@
         <img src="Resource/Carrucel 04.jpeg" alt="Imagen 5">
         <img src="Resource/Carrucel 03.jpeg" alt="Imagen 6">
         <img src="Resource/Carrucel 02.jpeg" alt="Imagen 7">
-        <img src="Resource/Carrucel 01.jpeg" alt="Imagen 7">
-      </div>
-      <div class="carousel-controls">
-        <button class="control" id="prev">❮</button>
-        <button class="control" id="next">❯</button>
+        <img src="Resource/Carrucel 01.jpeg" alt="Imagen 8">
+    </div>
+        <button id="pause">
+            <img id="pause-icon" src="Resource/Pause.png" alt="Pause" width="30" height="30"></button>    
+      
+        <div class="carousel-controls">
+        <button class="control" id="prev"><</button>
+        <button class="control" id="next">></button>
       </div>
     </div>
   
-    <script>
-        const imagesContainer = document.getElementById("carousel-images");
-        const nextButton = document.getElementById("next");
-        const prevButton = document.getElementById("prev");
-      
-        let currentIndex = 0;
-              
-        const updateCarousel = () => {
-          const width = imagesContainer.offsetWidth;
-          imagesContainer.style.transform = `translateX(-${currentIndex * width}px)`;
-        };
-              
-        const nextImage = () => {
-          currentIndex = (currentIndex + 1) % imagesContainer.children.length;
-          updateCarousel();
-        };
-              
-        const prevImage = () => {
-          currentIndex =
-            (currentIndex - 1 + imagesContainer.children.length) % imagesContainer.children.length;
-          updateCarousel();
-        };
-              
-        nextButton.addEventListener("click", nextImage);
-        prevButton.addEventListener("click", prevImage);
-        
-        setInterval(nextImage, 3000);
-        
-        window.addEventListener("resize", updateCarousel);
-        
-        const carousel = document.querySelector(".carousel");
-        carousel.style.margin = "20px auto";
-        carousel.style.display = "block";
-      </script>
-
     <h2 class="contact-info">Contáctanos para más información y contrataciones.</h2>
     <div class="social-icons">
         <a href="https://wa.me/50670099800" target="_blank"><img src="Resource/whatsapplogo.png" alt="WhatsApp" class="social-icon"></a>
@@ -136,6 +56,7 @@
         <a href="https://www.instagram.com/embycenam/" target="_blank"><img src="Resource/Instagram.png" alt="Instagram" class="social-icon"></a>
         <a href="https://www.tiktok.com/@embycenam" target="_blank"><img src="Resource/tiktok.png" alt="TikTok" class="social-icon"></a>
     </div>
-    
+<script src="script.js">  </script>
+
 </body>
 </html>
