@@ -11,7 +11,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Color de fondo */
+    background-color: #000000; /* Color del fondo */
     text-align: center;
     color: #333; /* Color de texto principal */
   }
@@ -51,7 +51,7 @@ body {
   }
   
   .steps-list a {
-    color: #2980b9; /* Color de los enlaces */
+    color: #2980b9; /* Color de los links */
     text-decoration: none;
   }
   
@@ -82,7 +82,7 @@ body {
   }
   
   .social-icon:hover {
-    opacity: 0.7; /* Efecto de hover en los íconos sociales */
+    opacity: 0.7; /* Efecto de hover en los íconos de redes sociales */
   }
   
   /* Estilo para dispositivos móviles */
@@ -129,9 +129,9 @@ body {
   }
 
   .carousel {
-    width: 80%; /* Ajusta el tamaño según tus necesidades */
+    width: 80%; 
     margin: 0 auto; /* Centra el carrusel horizontalmente */
-    overflow: hidden; /* Oculta el contenido desbordado */
+    overflow: hidden; 
     position: relative; /* Necesario para posicionar los botones de control */
   }
   
@@ -162,7 +162,7 @@ body {
     color: white;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 50%; /* Botones redondeados */
+    border-radius: 50%;
     font-size: 18px;
     z-index: 11; /* Asegura que los botones se vean sobre otros elementos */
   }

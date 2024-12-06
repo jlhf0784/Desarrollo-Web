@@ -25,7 +25,7 @@ const prevImage = () => {
     (currentIndex - 1 + imagesContainer.children.length) % imagesContainer.children.length;
   updateCarousel();
 };
-
+// Configuracion Carrucel //
 const togglePause = () => {
   isPaused = !isPaused;
 
