@@ -31,7 +31,7 @@ const togglePause = () => {
 
   if (isPaused) {
     clearInterval(autoScroll);
-    pauseIcon.src = "Resource/Play.png"; 
+    pauseIcon.src = "Resource/play.png"; 
     pauseIcon.alt = "Resume"; 
   } else {
     autoScroll = setInterval(nextImage, 3000); 

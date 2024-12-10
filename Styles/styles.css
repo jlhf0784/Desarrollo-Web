@@ -9,7 +9,7 @@
 /* Estilos básicos para la página */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0px 0px;
     padding: 0;
     background-color: #000000; /* Color del fondo */
     text-align: center;
@@ -128,13 +128,14 @@ body {
     }
   }
 
+  /* Carrucel */
   .carousel {
     width: 80%; 
     margin: 0 auto; /* Centra el carrusel horizontalmente */
     overflow: hidden; 
     position: relative; /* Necesario para posicionar los botones de control */
   }
-  
+   
   .carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
